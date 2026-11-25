@@ -10,26 +10,26 @@ Người gắn nhãn 1: Phan Đào Minh Quân · Người gắn nhãn 2: Hà Vă
 | --: | --- | --- | --- | --- |
 | 1 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 2 | Do người dùng | Hệ thống | Không | Do người dùng |
-| 3 | Ngữ cảnh | Hệ thống | Không | Ngữ cảnh |
+| 3 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 4 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 5 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 6 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 7 | Hệ thống | Hệ thống | Có | Hệ thống |
-| 8 | Ngầm | Hệ thống | Không | Ngầm |
+| 8 | Ngầm | Ngầm | Không | Ngầm |
 | 9 | Ngữ cảnh | Giới hạn hệ thống | Không | Ngữ cảnh |
 | 10 | Ngữ cảnh | Hệ thống | Không | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
-| 12 | Ngầm | Hệ thống | Không | Ngầm |
+| 12 | Ngầm | Ngầm | Có | Ngầm |
 | 13 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 14 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 15 | Hệ thống | Hệ thống | Có | Hệ thống |
-| 16 | Ngữ cảnh | Hệ thống | Không | Ngữ cảnh |
+| 16 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 17 | Hệ thống | Hệ thống | Có | Hệ thống |
-| 18 | Ngữ cảnh | Do người dùng | Không | Ngữ cảnh |
+| 18 | Ngữ cảnh | Ngữ Cảnh | Có | Ngữ cảnh |
 | 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận:** 12 / 20 = 60%
+**Tỉ lệ đồng thuận:** 16 / 20 = 80%
 
 ## Quy tắc phân biệt cho các ca không trùng
 
