@@ -183,6 +183,50 @@ def chi_so_e1(reqs):
           f'tỉ lệ được xem lại: {reqs["duoc_xem_lai"].mean():.2%}')
 
 
+# ---------- Nhiệm vụ D1 · Cỡ mẫu ----------
+ICC = 0.02
+
+
+def co_mau(p1, p2, alpha=0.05, power=0.8):
+    """Cỡ mẫu mỗi nhóm khi so hai tỉ lệ (công thức trong docs/du_lieu_va_cong_thuc.md)."""
+    from statistics import NormalDist
+    za, zb = NormalDist().inv_cdf(1 - alpha / 2), NormalDist().inv_cdf(power)
+    pb = (p1 + p2) / 2
+    return math.ceil((za * math.sqrt(2 * pb * (1 - pb))
+                      + zb * math.sqrt(p1 * (1 - p1) + p2 * (1 - p2))) ** 2 / (p2 - p1) ** 2)
+
+
+def he_so_thiet_ke(m, icc=ICC):
+    return 1 + (m - 1) * icc
+
+
+def cau_d1(reqs, p1=0.70, mde=0.05, so_nv=40, so_depot=12):
+    from statsmodels.stats.proportion import proportion_effectsize
+    from statsmodels.stats.power import NormalIndPower
+    print('\n== D1 · Cỡ mẫu (baseline 0,70; +5 điểm; alpha 0,05; power 0,8; ICC 0,02) ==')
+    n = co_mau(p1, p1 + mde)
+    print(f'a) Chia theo yêu cầu: {n:,} yêu cầu mỗi nhóm')
+    de = he_so_thiet_ke(75)
+    n_b = math.ceil(n * de)
+    nv_b = math.ceil(n_b / 75)
+    print(f'b) Theo nhân viên, m = 75: DE {de:.2f} → {n_b:,} mỗi nhóm = {nv_b} người/nhóm, '
+          f'tổng {2 * nv_b} > {so_nv}: không đủ người')
+    print(f'c) 20 nhân viên mỗi nhóm: tối đa c/ICC = {20 / ICC:,.0f} < {n:,}: không đạt')
+    print(f'd) {so_depot // 2} depot mỗi nhóm: tối đa {so_depot // 2 / ICC:,.0f}')
+    n6 = co_mau(p1, p1 + 0.06)
+    # 20m / (1 + (m-1)·ICC) ≥ n6  →  m ≥ n6·(1-ICC) / (20 - n6·ICC)
+    m = math.ceil(n6 * (1 - ICC) / (20 - n6 * ICC))
+    print(f'e) Mức chênh 6 điểm ({n6}/nhóm), 20 người mỗi nhóm: m ≥ {m} yêu cầu mỗi người '
+          f'(DE {he_so_thiet_ke(m):.2f})')
+    es = proportion_effectsize(p1 + mde, p1)
+    pw = NormalIndPower().power(es, nobs1=n6, alpha=0.05)
+    print(f'Power nếu tác động thật chỉ 5 điểm với n = {n6}: {pw:.2f}')
+    pv = reqs[reqs['loai'].isin(PHAM_VI)]
+    print(f'Mở lại 7 ngày hiện tại: {reqs["mo_lai_trong_7_ngay"].mean():.2%} '
+          f'({reqs["mo_lai_trong_7_ngay"].sum()}/{len(reqs)}); phạm vi: '
+          f'{pv["mo_lai_trong_7_ngay"].mean():.2%}')
+
+
 if __name__ == '__main__':
     runs = pd.read_csv('logix_runs.csv')
     reqs = pd.read_csv('logix_requests.csv', keep_default_na=False)
@@ -201,6 +245,4 @@ if __name__ == '__main__':
     bang_a4(runs, reqs)   # CP1 · A4
     bang_b(runs, reqs)    # CP2 · B1–B4
     chi_so_e1(reqs)       # CP5 · E1
-    # TODO CP4 · Nhiệm vụ D: cỡ mẫu.
-    #   from statsmodels.stats.proportion import proportion_effectsize
-    #   from statsmodels.stats.power import NormalIndPower
+    cau_d1(reqs)          # CP4 · D1
