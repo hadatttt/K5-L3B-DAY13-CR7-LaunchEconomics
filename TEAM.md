@@ -13,7 +13,7 @@ Nhóm 2 người, mỗi người kiêm 2 vai.
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 | Phan Đào Minh Quân |  |  |  | Người viết code (trước giải lao) · Người gắn nhãn 1 · Người kiểm số (sau giải lao) |
+|   1 | Phan Đào Minh Quân | 2A202603971 | emiyashirou191@gmail.com | Shirou191 | Người viết code (trước giải lao) · Người gắn nhãn 1 · Người kiểm số (sau giải lao) |
 |   2 | Hà Văn Khánh Đạt | 2A202604074 | hagamer2004@gmail.com | hadatttt | Người kiểm số (trước giải lao) · Người gắn nhãn 2, kiêm giữ hồ sơ · Người viết code (sau giải lao) |
 
 ### Bảng chia việc theo checkpoint
@@ -52,16 +52,41 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 Sao chép mục dưới đây cho từng thành viên.
 
-## HoVaTen-MSSV
+## PhanDaoMinhQuan-2A202603971
 
 ### Phần việc phụ trách
 
--
+- CP1, CP2: viết code A1–A4 và B1–B4 trong `src/lab13.py`.
+- CP3: người gắn nhãn 1 (20 ca, độc lập).
+- CP4: kiểm tay D1, trả lời năm câu D2, viết ba luật dừng trong `pilot_plan.yaml`.
+- CP5: `chi_so.md`; bảo vệ hồ sơ trước hội đồng; chuẩn bị 5 câu hỏi hội đồng hỏi NhomT2.
 
 ### Đóng góp cụ thể
 
--
+- `lab13.py`: ba hàm A1, `mo_hinh`, `bang_a3`, `bang_a4`, `bang_b`, `chi_so_e1`; chi phí mỗi việc thành công 4.472 đ [simulated], gấp 16,3 lần hoá đơn token + tool chia số yêu cầu.
+- D1 kiểm tay khớp code của Đạt: 1.251 · 3.103 · 1.000 · 300 · m ≥ 299; power 0,64.
+- `chi_so.md`: 3 chỉ số (82,83% · 27,12% · 4,25%), 10 event có `trace_id`, 3 dòng rủi ro kinh tế.
 
 ### Bằng chứng
 
--
+- `python lab13.py` in ba phép thử ĐẠT và các bảng A2, A3, A4, B1–B4, E1.
+- Báo cáo cá nhân: `report/team/2A202603971_PhanDaoMinhQuan.md`.
+
+## HaVanKhanhDat-2A202604074
+
+### Phần việc phụ trách
+
+- CP1, CP2: kiểm số, điền `bang_chi_phi.md`.
+- CP3: người gắn nhãn 2 (20 ca, độc lập); ghi hai bộ nhãn và đồng thuận vào `bang_loi.md`.
+- CP4: viết code D1 trong `lab13.py`; điền `pilot_plan.yaml`.
+- CP5: giữ hồ sơ `ho_so_launch_v0.md`; `phieu_cham.md`; `group_report.md`; commit, push.
+
+### Đóng góp cụ thể
+
+- `lab13.py`: `co_mau`, `he_so_thiet_ke`, `cau_d1`.
+- `bang_chi_phi.md` đủ A1–A4, B1–B4; `pilot_plan.yaml` chia theo nhân viên 20 + 20, MDE 0,06, n = 859, DE 6,96.
+- `ho_so_launch_v0.md`: bảy mục, đề xuất Go có điều kiện cho phạm vi noi_dia + hang_nang.
+
+### Bằng chứng
+
+- Báo cáo cá nhân: `report/team/2A202604074_HaVanKhanhDat.md`.

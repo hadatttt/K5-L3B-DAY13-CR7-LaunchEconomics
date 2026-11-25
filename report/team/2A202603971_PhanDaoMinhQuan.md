@@ -4,7 +4,7 @@
 
 - Họ tên: Phan Đào Minh Quân
 - MSSV: 2A202603971
-- Email:
+- Email: emiyashirou191@gmail.com
 - Vai trong nhóm: người viết code (trước giải lao) · người gắn nhãn 1 · người kiểm số (sau giải lao)
 
 ## 2. Phần việc phụ trách
@@ -27,7 +27,7 @@
 
 - `src/lab13.py`: `python lab13.py` in "Ba phép thử đáp án biết trước: ĐẠT" và các bảng A2, A3, A4, B1–B4, E1.
 - `report/team/chi_so.md`, phần D2 + `identifiability` + `stop_rules` trong `report/team/pilot_plan.yaml`.
-- Commit: (điền hash sau khi commit)
+- Commit: xem lịch sử git của `src/lab13.py`, `report/team/chi_so.md`, `report/team/pilot_plan.yaml` (tác giả Shirou191).
 
 ## 5. Công cụ AI đã dùng
 
@@ -37,4 +37,8 @@
 
 ## 6. Tự đánh giá
 
-...
+- Làm tốt: phần A và B khớp đáp án (lệch dưới 2%), ba phép thử A1 đạt; giải thích được vì sao tử số tính mọi lần chạy kể cả lỗi, còn mẫu số chỉ đếm việc thành công, và vì sao giới hạn rẻ nhất cho công ty (2 lần, 6.901.220 đ) khác giới hạn cho chi phí mỗi việc thành công thấp nhất (1 lần, 4.111 đ) [simulated].
+- Luật dừng đặt ngưỡng theo dữ liệu chạy thử (mở lại 3,97%, bỏ qua gợi ý 27,12%) thay vì con số tròn, nên pilot không bị dừng oan ngay tuần đầu.
+- Chưa tốt: đồng thuận nhãn lỗi ban đầu còn thấp vì hai người hiểu khác nhau ranh giới "Hệ thống" và "Ngầm"; lần sau nên thống nhất định nghĩa năm loại trước khi gắn.
+- Chưa tốt: dựa nhiều vào trợ lý AI để viết code nhanh; đã tự kiểm tra lại bằng cách đối chiếu số và tính tay D1, nhưng cần tự viết lại được `mo_hinh` mà không cần gợi ý.
+- Tự chấm: hoàn thành đủ phần việc được giao trong `TEAM.md`.
