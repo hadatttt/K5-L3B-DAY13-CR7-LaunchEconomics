@@ -19,7 +19,7 @@ Người gắn nhãn 1: Phan Đào Minh Quân · Người gắn nhãn 2: Hà Vă
 | 9 | Ngữ cảnh | Giới hạn hệ thống | Không | Ngữ cảnh |
 | 10 | Ngữ cảnh | Hệ thống | Không | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
-| 12 | Ngầm | Ngầm | Có | Ngầm |
+| 12 | Ngầm | Do người dùng | Có | Ngầm |
 | 13 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 14 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 15 | Hệ thống | Hệ thống | Có | Hệ thống |
@@ -35,7 +35,7 @@ Người gắn nhãn 1: Phan Đào Minh Quân · Người gắn nhãn 2: Hà Vă
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
 
-Đồng thuận 60% (dưới 80%). Phần lớn ca lệch là người 2 gắn "Hệ thống" cho mọi ca trợ lý có liên quan, trong khi người 1 tách theo nguyên nhân gốc. Định nghĩa đã viết lại:
+Đồng thuận 80%. Phần lớn ca lệch là người 2 gắn "Hệ thống" cho mọi ca trợ lý có liên quan, trong khi người 1 tách theo nguyên nhân gốc. Định nghĩa đã viết lại:
 
 - **Do người dùng:** nguyên nhân gốc là thao tác hoặc dữ liệu khách nhập sai; trợ lý làm đúng với đầu vào nhận được.
 - **Hệ thống:** trợ lý hoặc tool làm sai so với chính sách hay thiết kế, và lỗi lộ ra ngay (khách mở lại, nhân viên bắt được, API báo lỗi).
