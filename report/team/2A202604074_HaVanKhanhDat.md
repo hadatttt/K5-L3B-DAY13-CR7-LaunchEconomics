@@ -4,7 +4,7 @@
 
 - Họ tên: Hà Văn Khánh Đạt
 - MSSV: 2A202604074
-- Email:
+- Email: hagamer2004@gmail.com
 - Vai trong nhóm: người kiểm số (trước giải lao) · người gắn nhãn 2, kiêm giữ hồ sơ · người viết code (sau giải lao)
 
 ## 2. Phần việc phụ trách
