@@ -15,11 +15,11 @@ Người gắn nhãn 1: Phan Đào Minh Quân · Người gắn nhãn 2: Hà Vă
 | 5 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 6 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 7 | Hệ thống | Hệ thống | Có | Hệ thống |
-| 8 | Ngầm | Ngầm | Không | Ngầm |
+| 8 | Ngầm | Ngầm | Có | Ngầm |
 | 9 | Ngữ cảnh | Giới hạn hệ thống | Không | Ngữ cảnh |
 | 10 | Ngữ cảnh | Hệ thống | Không | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
-| 12 | Ngầm | Do người dùng | Có | Ngầm |
+| 12 | Ngầm | Do người dùng | Không | Ngầm |
 | 13 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 14 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 15 | Hệ thống | Hệ thống | Có | Hệ thống |
@@ -35,7 +35,7 @@ Người gắn nhãn 1: Phan Đào Minh Quân · Người gắn nhãn 2: Hà Vă
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
 
-Đồng thuận 80%. Phần lớn ca lệch là người 2 gắn "Hệ thống" cho mọi ca trợ lý có liên quan, trong khi người 1 tách theo nguyên nhân gốc. Định nghĩa đã viết lại:
+Đồng thuận 16/20 = 80%; 4 ca không trùng là 2, 9, 10, 12. Định nghĩa nhóm dùng để thống nhất:
 
 - **Do người dùng:** nguyên nhân gốc là thao tác hoặc dữ liệu khách nhập sai; trợ lý làm đúng với đầu vào nhận được.
 - **Hệ thống:** trợ lý hoặc tool làm sai so với chính sách hay thiết kế, và lỗi lộ ra ngay (khách mở lại, nhân viên bắt được, API báo lỗi).
@@ -46,13 +46,9 @@ Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định 
 Quy tắc cho từng ca không trùng:
 
 - Ca 2: theo nhãn người 1 (Do người dùng). Cần nhóm xác nhận lại trước khi nộp: mô tả cho thấy trợ lý gọi tool với tham số hàng thường thay vì hàng nặng.
-- Ca 3: Ngữ cảnh, vì trợ lý hoàn đúng thiết kế (về ví LogiX), lỗi là khách kỳ vọng tiền về tài khoản ngân hàng.
-- Ca 8: Ngầm, vì số tiền vẫn đúng, không ai báo; chỉ lộ ra khi đối chiếu căn cứ với chính sách hiện hành.
 - Ca 9: Ngữ cảnh, vì khách hiểu "mã đơn" theo thói quen của sàn thương mại điện tử, còn trợ lý không gợi ý cách tìm mã vận đơn.
 - Ca 10: Ngữ cảnh, vì trợ lý từ chối đúng chính sách, nhưng ứng dụng vẫn hứa "cam kết giao 24 giờ" nên khách thấy vô lý.
 - Ca 12: Ngầm, vì kết quả cuối vẫn đúng, chi phí token của D05 gấp 3 lần suốt 3 tuần mà không ai thấy.
-- Ca 16: Ngữ cảnh, vì trợ lý gửi đúng thiết kế "gửi ngay khi xong", nhưng giờ gửi 2:14 sáng không hợp hoàn cảnh của khách.
-- Ca 18: Ngữ cảnh, vì số tiền tính đúng, lỗi nằm ở tin nhắn thiếu cách tính nên khách hiểu sai.
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
 
