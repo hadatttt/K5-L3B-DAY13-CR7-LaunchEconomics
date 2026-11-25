@@ -9,14 +9,14 @@ Người gắn nhãn 1: Phan Đào Minh Quân · Người gắn nhãn 2: Hà Vă
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
 | 1 | Do người dùng | Do người dùng | Có | Do người dùng |
-| 2 | Do người dùng | Hệ thống | Không | Do người dùng |
+| 2 | Do người dùng | Hệ thống | Không | Hệ thống |
 | 3 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 4 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 5 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 6 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 7 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 8 | Ngầm | Ngầm | Có | Ngầm |
-| 9 | Ngữ cảnh | Giới hạn hệ thống | Không | Ngữ cảnh |
+| 9 | Ngữ cảnh | Giới hạn hệ thống | Không | Do người dùng |
 | 10 | Ngữ cảnh | Hệ thống | Không | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 12 | Ngầm | Do người dùng | Không | Ngầm |
@@ -45,8 +45,8 @@ Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định 
 
 Quy tắc cho từng ca không trùng:
 
-- Ca 2: theo nhãn người 1 (Do người dùng). Cần nhóm xác nhận lại trước khi nộp: mô tả cho thấy trợ lý gọi tool với tham số hàng thường thay vì hàng nặng.
-- Ca 9: Ngữ cảnh, vì khách hiểu "mã đơn" theo thói quen của sàn thương mại điện tử, còn trợ lý không gợi ý cách tìm mã vận đơn.
+- Ca 2: Hệ thống, vì khách nhập đúng; trợ lý gọi tool tra bảng giá với tham số hàng thường thay vì hàng nặng (sai so với chính sách) và lỗi lộ ra khi khách mở lại.
+- Ca 9: Do người dùng, vì gốc lỗi là khách nhập mã đơn của sàn thay vì mã vận đơn; việc trợ lý không gợi ý cách tìm mã là chỗ cần cải thiện, ghi ở cột khắc phục, không đổi nhãn.
 - Ca 10: Ngữ cảnh, vì trợ lý từ chối đúng chính sách, nhưng ứng dụng vẫn hứa "cam kết giao 24 giờ" nên khách thấy vô lý.
 - Ca 12: Ngầm, vì kết quả cuối vẫn đúng, chi phí token của D05 gấp 3 lần suốt 3 tuần mà không ai thấy.
 
