@@ -14,7 +14,7 @@ Nhóm 2 người, mỗi người kiêm 2 vai.
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Phan Đào Minh Quân |  |  |  | Người viết code (trước giải lao) · Người gắn nhãn 1 · Người kiểm số (sau giải lao) |
-|   2 | Hà Văn Khánh Đạt |  |  | hadatttt | Người kiểm số (trước giải lao) · Người gắn nhãn 2, kiêm giữ hồ sơ · Người viết code (sau giải lao) |
+|   2 | Hà Văn Khánh Đạt | 2A202604074 |  | hadatttt | Người kiểm số (trước giải lao) · Người gắn nhãn 2, kiêm giữ hồ sơ · Người viết code (sau giải lao) |
 
 ### Bảng chia việc theo checkpoint
 
