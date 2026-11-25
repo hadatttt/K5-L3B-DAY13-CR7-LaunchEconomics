@@ -15,7 +15,7 @@ Người gắn nhãn 1: Phan Đào Minh Quân · Người gắn nhãn 2: Hà Vă
 | 5 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 6 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 7 | Hệ thống | Hệ thống | Có | Hệ thống |
-| 8 | Ngầm | Ngầm | Không | Ngầm |
+| 8 | Ngầm | Do người dùng | Không | Ngầm |
 | 9 | Ngữ cảnh | Giới hạn hệ thống | Không | Ngữ cảnh |
 | 10 | Ngữ cảnh | Hệ thống | Không | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
