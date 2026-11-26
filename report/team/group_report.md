@@ -28,7 +28,7 @@ Trả lời bốn câu hỏi cho Gate 2a của trợ lý hoàn phí LogiX-VN: c�
 - Chỉ số chính trong đợt chạy thử là 82,83%; bỏ qua gợi ý 27,12%; mở lại 7 ngày 4,25% (phạm vi 3,97%).
 - Pilot: 20 + 20 nhân viên, 859 yêu cầu/nhóm, DE 6,96, m ≥ 299; power chỉ 0,64 nếu tác động thật là 5 điểm.
 - **Đề xuất cuối:** Go có điều kiện cho phạm vi noi_dia + hang_nang (4 điều kiện, mỗi điều kiện có người phụ trách và ngày kiểm tra).
-- Kết quả duyệt chéo nhận được từ hội đồng: (điền sau buổi duyệt chéo)
+- Kết quả duyệt chéo nhận được từ hội đồng: NhomT2 chấm 30 / 30 điểm, quyết định của hội đồng: Go.
 
 ## 5. Khó khăn và cách xử lý
 
